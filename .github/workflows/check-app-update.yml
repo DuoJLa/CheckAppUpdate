@@ -1,0 +1,40 @@
+name: Check App Store Updates
+
+on:
+  schedule:
+    # 每小时检查一次，可根据需要调整
+    - cron: '0 * * * *'
+  workflow_dispatch: # 支持手动触发
+
+jobs:
+  check-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: Install dependencies
+        run: |
+          pip install requests
+      
+      - name: Check app updates
+        env:
+          PUSH_METHOD: ${{ secrets.PUSH_METHOD }}
+          BARK_KEY: ${{ secrets.BARK_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          APP_IDS: ${{ secrets.APP_IDS }}
+        run: python check_update.py
+      
+      - name: Commit version cache
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add version_cache.json || true
+          git commit -m "Update version cache [skip ci]" || true
+          git push || true
