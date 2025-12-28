@@ -4,7 +4,7 @@ permissions:
 
 on:
   schedule:
-    - cron: '0 * * * *'  # 每小时
+    - cron: '0 */4 * * *'  # 检查频率
   workflow_dispatch:
 
 jobs:
