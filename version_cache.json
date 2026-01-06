@@ -35,11 +35,11 @@
     "updated_at": "2025-12-28T14:23:54.783791"
   },
   "6448311069": {
-    "version": "1.2025.350",
+    "version": "1.2025.357",
     "app_name": "ChatGPT",
     "region": "us",
-    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/39/82/d9/3982d95c-b526-da87-584a-f5242b18959c/AppIcon-0-0-1x_U007epad-0-0-0-1-0-P3-85-220.png/100x100bb.jpg",
-    "updated_at": "2025-12-28T14:23:54.853875"
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/04/98/65/049865c9-2a3d-50be-7e91-3d5da454a41b/AppIcon-0-0-1x_U007epad-0-0-0-1-0-P3-85-220.png/100x100bb.jpg",
+    "updated_at": "2026-01-06T16:15:50.224213"
   },
   "1047223162": {
     "version": "4.5.14",
@@ -70,10 +70,10 @@
     "updated_at": "2026-01-05T04:49:02.847317"
   },
   "544007664": {
-    "version": "20.50.9",
+    "version": "20.50.10",
     "app_name": "YouTube",
     "region": "cn",
-    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/14/11/c7/1411c79b-9a1f-78b3-8a05-8416cf7c7bfe/logo_youtube_2024_q4_color-0-1x_U007emarketing-0-0-0-7-0-0-0-85-220-0.png/100x100bb.jpg",
-    "updated_at": "2026-01-06T08:18:09.028795"
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9e/59/93/9e599325-5b0d-835a-758e-f0111966f9d0/logo_youtube_2024_q4_color-0-1x_U007emarketing-0-0-0-7-0-0-0-85-220-0.png/100x100bb.jpg",
+    "updated_at": "2026-01-06T16:15:51.085139"
   }
 }
